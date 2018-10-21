@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Translate</string>
+    <string name="navigation_home_string">Главная</string>
+    <string name="navigation_history_string">История</string>
+    <string name="navigation_profile_string">Профиль</string>
+
 </resources>
