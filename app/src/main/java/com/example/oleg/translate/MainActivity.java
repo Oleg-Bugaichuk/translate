@@ -6,7 +6,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
+
+
 
         //ищем бар навигации
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.navigation);
@@ -28,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     case R.id.navigation_home:
                         loadFragment(HomePage.newInstance());
+
                         break;
 
                     case R.id.navigation_history:
@@ -38,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+
+
+
+
+
+
+
     }
 
     private void loadFragment(Fragment fragment)
